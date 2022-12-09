@@ -230,14 +230,14 @@ function continueStatement(numero) {
   //Pista: usá el statement 'continue'
   // Tu código:
   let nuevoContinue = [];
-  for (let = 0; i < 10; i++){
+  for (let i = 0; i < 10; i++){
     if(i === 5){
       continue;
     }
     numero = numero +2;
     nuevoContinue.push(numero[i])
   }
-   return nuevoContinue
+   return nuevoContinue;
   
 }
 

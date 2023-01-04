@@ -34,14 +34,16 @@ function devolverString(str) {
 function suma(x, y) {
   // "x" e "y" son números
   // Suma "x" e "y" juntos y devuelve el valor
-  // Tu código:
+  // Tu código:dos codigos 
+  //return x + y ;
   var sum = x + y // var es una variable para guardar el valor de X + Y 
   return sum; // return sum es la variable  que devuelve al valor 
 }
 
 function resta(x, y) {
   // Resta "y" de "x" y devuelve el valor
-  // Tu código:
+  // Tu código:dos codigos 
+  //return x - y;
   var res=x-y // var res es una variable para guardar el valor de X - Y 
   return res; // return res es la variable  que devuelve al valor
 }
@@ -51,12 +53,13 @@ function multiplica(x, y) {
   // Tu código:
   //var mult=x*y // var mult es una variable para guardar el valor de X - Y 
   //ret mult;
-  return x * y;// return res es la variable  que devuelve al valor
+  return x * y;// multiplica los valores y retorna el valor de los valores 
 }
 
 function divide(x, y) {
   // Divide "x" entre "y" y devuelve el valor
   // Tu código:
+  //return x / y
   let total = x/y;
   return total
 }
@@ -145,7 +148,7 @@ function esImpar(num) {
   // Tu código:
   //if (num % 2 !=0)return true 
   //return false
-  if (num % 2===1){
+  if (num % 2 === 1){
     return true;
   }else {
     return false
@@ -222,7 +225,8 @@ function agregarSimboloExclamacion(str) {
 function combinarNombres(nombre, apellido) {
   // Devuelve "nombre" y "apellido" combinados en una string y separados por un espacio.
   // Ejemplo: "Soy", "Henry" -> "Soy Henry"
-  // Tu código:dos opciones de codigos 
+  // Tu código:tres opciones de codigos 
+  //var combinado = nombre + ` ` + apellido
   //return nombre + " " + apellido
   return nombre + " " + apellido;// desarrollo de una concatenacion str + " ";
   

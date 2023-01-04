@@ -10,7 +10,7 @@ function obtenerMayor(x, y) {
   //return Math.max (x,y)
   if(x === y){
     return x
-  }else if(x>y){
+  }else if(x > y){
     return x
   }else {
     return y
@@ -23,10 +23,10 @@ function mayoriaDeEdad(edad) {
   //Si es menor, devolver --> "Not allowed"
   // dos codigos posibles
   //return edad >= 18?´Allowed´ : ´Not Allowed´ 
-  if(edad === 18){
-    return "allowed"
-  }else {
-    return "no allowed"
+  if(edad >= 18){
+    return "Allowed";
+  }else{
+    return "Not Allowed";
   }
 }
   
@@ -56,7 +56,7 @@ function conection(status) {
   }else if(status === 2){
     return "Away"
   }else {
-    return "offline"
+    return "Offline"
   }
 }
 
@@ -74,25 +74,26 @@ function saludo(idioma) {
   //return "hola"; 
   //con if
   if( idioma === aleman){
-    return "Guten tag!"
+    return "Guten Tag!"
   }else if(idioma === mandarin){
     return "Ni Hao"
   }else if(idioma === ingles){
     return "Hello"
   }else {
-    return "hola"
+    return "Hola"
   }
   // con switch
   //switch (idioma){
   //  case "aleman":
-  //    return "guten tag!";
+  //    return "Guten tag!";
   //  case "mandarin":
-  //    return "Ni hao";
+  //    return "Ni Hao";
   //  case "ingles":
-  //    return "hello";
+  //    return "Hello";
   //  default:
-  //    return "hola";     
-  }
+  //    return "Hola"; 
+  //}    
+  
 }
 
 function colors(color) {
@@ -135,16 +136,16 @@ function esDiezOCinco(numero) {
   //if(numero === 10 || numero === 5 ) return true 
   // else return false 
   if(numero === 10 || numero === 5 )
-     return true
-     return false 
+     return true;
+     return false; 
 }
 
 function estaEnRango(numero) {
   // Devuelve "true" si "numero" es menor que 50 y mayor que 20
   // De lo contrario, devuelve "false"
   // Tu código:
-  if(numero < 50 && numero > 20 ) return true 
-  return false
+  if(numero < 50 && numero > 20 ) return true; 
+  return false;
 }
 
 function esEntero(numero) {
@@ -168,7 +169,7 @@ function fizzBuzz(numero) {
   if(numero % 3 === 0 && numero % 5 === 0) return "fizzbuzz"
   if(numero % 3 === 0) return `fizz`
   if(numero % 5 === 0) return `buzz`
-  return numero
+  return numero;
 }
 
 function operadoresLogicos(num1, num2, num3) {
@@ -207,7 +208,7 @@ function esVerdadero(valor){
   //si su valor es true y “Soy falso” si su valor es false.
   //Escribe tu código aquí
   if(valor === true)return `soy verdadero`
-  return `soy falso`
+  return `Soy falso`
 }
 
 function tablaDelSeis(){

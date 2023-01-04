@@ -9,10 +9,10 @@ function crearGato (nombre, edad) {
   var obj = {
     nombre: nombre,
     edad: edad,
-    meow:funtion(){
-      return "Meow!";
+    meow: function() {
+      return 'Meow!';
     }
-  }
+  };
   return obj;
 }
 
@@ -37,7 +37,7 @@ function multiplicarNumeroDesconocidoPorCinco (objetoMisterioso) {
   // "objetoMisterioso" tiene una propiedad llamada "numeroMisterioso"
   // Multiplica el numeroMisterioso por 5 y devuelve el producto
   // Tu código:
-  var result = objetomisterioso.numeroMisterioso * 5;
+  var result = objetoMisterioso.numeroMisterioso * 5;
 
   return result;
 }

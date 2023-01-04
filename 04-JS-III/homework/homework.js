@@ -17,7 +17,7 @@ function devolverUltimoElemento(array) {
 function obtenerLargoDelArray(array) {
   // Devuelve el largo de un array
   // Tu código:
-  return array.lenght;
+  return array.length;
 }
 
 
@@ -143,10 +143,10 @@ function diaDeLaSemana(numeroDeDia) {
   //Realiza una función que dado el número del día de la semana, retorne: Es fin de semana
   //si el día corresponde a Sábado o Domingo y “Es dia Laboral” en caso contrario. 
   //Escribe tu código aquí   
-  if (numeroDeDia === 1 || numeroDeDia === 7){
+  if(numeroDeDia === 1 || numeroDeDia === 7 ){
     return "Es fin de semana"
   }
-  return "Es dia laboral"
+  return "Es dia Laboral"
   
 } 
 
@@ -179,11 +179,18 @@ function mesesDelAño(array) {
   // "Enero", "Marzo" y "Noviembre", guardarlo en nuevo array y retornarlo.
   //Si alguno de los meses no está, devolver: "No se encontraron los meses pedidos"
   // Tu código:
-  var nuevoArray = array.filter((e) => e === `Enero` || e === `Marzo` || e === `Noviembre` )
-  if(nuevoArray.length < 3){
-    return "no se encontraron los meses pedidos"
+  var nuevoArray = [];
+  for(let i= 0; i<array.length; i++) {
+    if(array[i] === "Enero" || array[i] === "Marzo" || array[i] === "Noviembre") {
+      nuevoArray.push(array[i]);
+    }
   }
-  return nuevoArray;
+  if(nuevoArray.length < 3) {
+    return "No se encontraron los meses pedidos";
+  }
+  else {
+      return nuevoArray;
+  }
 }
 
 
@@ -209,16 +216,21 @@ function breakStatement(numero) {
   //devolver: "Se interrumpió la ejecución"
   //Pista: usá el statement 'break'
   // Tu código:
-  var breaKArray = [];
-  for (var i = 0; i < 10; i++){
-    numero = numero +2;
-    breaKArray.push(numero);
-    if(i === breaKArray[i]){
-      break;
+  var array = [];
+  var suma = numero;
+  for(var i= 0; i<10; i++) {
+    suma = suma + 2;
+    if(suma === i) break;
+    else {
+      array.push(suma);
     }
   }
-  if(i === breaKArray[i]) return "se interrumpió la ejecución"
-  return breaKArray;
+  if(i < 10) {
+    return 'Se interrumpió la ejecución';
+  }
+  else {
+      return array;
+  }
 }
 
 
@@ -229,16 +241,16 @@ function continueStatement(numero) {
   //Cuando el número de iteraciones alcance el valor 5, no se suma en ese caso y se continua con la siguiente iteración
   //Pista: usá el statement 'continue'
   // Tu código:
-  let nuevoContinue = [];
-  for (let i = 0; i < 10; i++){
-    if(i === 5){
-      continue;
+  var array = [];
+  var suma = numero;
+  for(var i= 0; i<10; i++) {
+    if(i === 5) continue;
+    else {
+      suma = suma + 2;
+      array.push(suma);
     }
-    numero = numero +2;
-    nuevoContinue.push(numero[i])
   }
-   return nuevoContinue;
-  
+  return array;
 }
 
 
